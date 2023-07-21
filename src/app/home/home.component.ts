@@ -8,9 +8,13 @@ import { AfterViewInit, Component, OnInit } from '@angular/core';
 export class HomeComponent implements AfterViewInit {
 
   className: string = "opacity-0"
+  classJob: string = "opacity-0"
+  classButton: string = "opacity-0"
 
   ngAfterViewInit(): void {
-    this.className = "flex justify-center my-24 transition-opacity ease-in duration-1000 delay-800 opacity-100"
+  this.className = "flex justify-center mt-4 text-5xl transition-opacity ease-in duration-1000 delay-900 opacity-100"
+  this.classJob = "flex justify-center mb-8 transition-opacity ease-in duration-1000 delay-900 opacity-100"
+  this.classButton = "flex justify-center m-auto my-14 text-xl transition-opacity ease-in duration-1000 delay-1000 opacity-100"
   }
 
 

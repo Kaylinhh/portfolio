@@ -1,1 +1,26 @@
-<p>contact works!</p>
+<div class="flex justify-center w-full">
+    <div>
+        <form [formGroup]="contactForm" (ngSubmit)="sendEmail($event)">
+
+            <div class="justify-center w-full">
+                <label for="name">nom</label>
+                <br>
+                <input type="text" name="name" formControlName="name">
+            </div>
+
+            <div class="justify-center w-full">
+                <label for="email">e-mail</label>
+                <br>
+                <input type="email" name="email" formControlName="email">
+            </div>
+
+            <div class="justify-center w-full">
+                <label for="message">message</label>
+                <br>
+                <textarea formControlName="message" name="message" class="w-full"></textarea>
+            </div>
+
+            <button type="submit" [disabled]="!contactForm.valid">Envoyer</button>
+        </form>
+    </div>
+</div>

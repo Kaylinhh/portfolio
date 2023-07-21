@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
-  navList: { id: number, label: string, icon: string, path?: string }[] = [
-    { "id": 1, "label": "Home", "icon":"../assets/home.svg", "path": "/home" },
-    { "id": 2, "label": "Projects", "icon": "", "path": "/projects" },
-    { "id": 3, "label": "About me", "icon": "", "path": "/about-me" },
-    { "id": 4, "label": "Contact", "icon": "", "path": "/contact" },
+  navList: { id: number, label: string, path?: string }[] = [
+    { "id": 1, "label": "Accueil", "path": "/home" },
+    { "id": 2, "label": "Projets", "path": "/projects" },
+    { "id": 3, "label": "A propos", "path": "/about-me" },
+    { "id": 4, "label": "Contact", "path": "/contact" }
   ];
 
   ngOnInit(): void {
